@@ -12,3 +12,4 @@ PRIVATE_REPO_DIR="${REPO_DIR}/Packages"
 DNF_REPOS="/etc/yum.repos.d"
 REPO_FILE="${DNF_REPOS}/${REPO_ID}.repo"
 
+GPG_KEY=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-Rocky-9
