@@ -3,7 +3,7 @@ set -euo pipefail
 source  "$(dirname "$0")/config.sh"
 
 mkdir -p "$PRIVATE_REPO_DIR" 
-
+print_fun "download Packages into the Packages Folder:"
 dnf download --resolve --alldeps --destdir="$PRIVATE_REPO_DIR" "${PACKAGES[@]}" --disablerepo="$REPO_ID"
 
 

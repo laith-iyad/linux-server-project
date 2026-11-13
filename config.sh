@@ -13,3 +13,13 @@ DNF_REPOS="/etc/yum.repos.d"
 REPO_FILE="${DNF_REPOS}/${REPO_ID}.repo"
 
 GPG_KEY=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-Rocky-9
+WEB_USR="webreport"
+HTTPD_CONF="/etc/httpd/conf/httpd.conf"
+APACHE_FOLDER="/var/www/html"
+APACHE_OWNER_CONF="/etc/tmpfiles.d"
+
+print_fun(){
+echo $1
+}
+
+
