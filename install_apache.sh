@@ -13,7 +13,8 @@ sed -i "s/User apache/User $WEB_USR/" $HTTPD_CONF
 sed -i "s/Group apache/Group $WEB_USR/" $HTTPD_CONF
 
 touch  "$APACHE_FOLDER/index.html"
-echo "Z $APACHE_FOLDER - $WEB_USR $WEB_USR -" > "$APACHE_OWNER_CONF/apache_owner.conf"
+echo "Z $APACHE_FOLDER - $WEB_USR $WEB_USR -" > "$APACHE_OWNER_CONF"
+#echo "Z $APACHE_FOLDER - $WEB_USR $WEB_USR -" > "$APACHE_OWNER_CONF"
 chown -R "$WEB_USR:$WEB_USR" "$APACHE_FOLDER"
 
 apachectl configtest
